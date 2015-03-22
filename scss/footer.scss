@@ -1,0 +1,34 @@
+.footer_wrap{
+	height: 261px;
+	background-color: #67676b; /* layer fill content */
+	@extend .clearfix;
+	overflow: hidden;
+}
+
+.footer {
+	height: inherit;
+	width: $size;
+	margin: 0 auto;
+	ul {
+		margin-top: 36px;
+		margin-left: 10px;
+		@extend .clearfix;
+	}
+}
+.footer li {
+	margin-right: 10px;
+	float: left;
+	color: #fff; /* text color */
+	font-family: "Helvetica";
+	font-size: 12px;
+}
+
+.footer p {
+
+	margin-left: 10px;
+	color: #fff; /* text color */
+	font-family: "Myriad Pro";
+	font-size: 10px;
+	line-height: 22px;
+	width: 80%;
+}

@@ -1,0 +1,160 @@
+@font-face {
+	font-family: "Myriad Pro";
+	src: url("./font/MYRIADPRO-REGULAR.OTF");
+}
+.banner { 
+	display: flex;
+	@extend .clearfix; 
+	height: 417px;
+	background:  url("./img/face.png") 75% 0 no-repeat,
+				 #fff  url("./img/bg.png")  0 0 repeat-x;
+	
+	-moz-box-shadow: 0 1px 0 #d8d8d8, inset 0 -1px 0 #fff; /* drop shadow and inner shadow */
+	-webkit-box-shadow: 0 1px 0 #d8d8d8, inset 0 -1px 0 #fff; /* drop shadow and inner shadow */
+	box-shadow: 0 1px 0 #d8d8d8, inset 0 -1px 0 #fff; /* drop shadow and inner shadow */
+}
+.banner_text {
+	width: $size;
+	margin: 0 auto;
+	//background: transparent url("./img/face.png") 300px 0 no-repeat;
+}
+.text_style1 {
+	color: #0073bf; /* text color */
+	font-family: "Helvetica";
+	font-size: 34px;
+	text-shadow: 0 1px 0 #fff; /* drop shadow */
+}
+.banner_text_top {
+	display: table;
+	letter-spacing: -1px;
+	@extend .text_style1;
+	margin: 4px 7px;
+	padding: 47px 0px 0px 0px;
+}
+.banner_text_bottom {
+	display: table;
+	@extend .text_style2;
+	margin: 4px 7px;
+	padding: 1px 1px 13px 1px;
+}
+.text_style2 {
+	display: table;
+	color: #919191; /* text color */
+	font-family: "Myriad Pro";
+	font-size: 17px;
+	text-shadow: 0 1px 0 #fff; /* drop shadow */
+}
+.banner .button1_wrap {
+	@extend .shape-4;
+	margin-bottom: 20px;
+}
+.banner .button1_text {
+	color: #0073bf; /* text color */
+	font-family: "Helvetica";
+	font-size: 13px;
+	text-align: center;
+	margin: auto ;
+	margin-left: 30px;
+	line-height: 50px; /* <-- this is what you must define */
+    vertical-align: middle;
+	display: flex;
+	i {
+		margin: 15px 12px;
+		display: block;
+		width: 16px;
+		height: 50px;
+		background:  url("./img/arrow.png") 0 0 no-repeat;
+	}
+
+}
+
+.shape-4 {
+	margin-left: 10px;
+	width: 298px;
+	height: 50px;
+	border: 1px solid #d3d0c8; /* stroke */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* border radius */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	//background-color: rgba(255,255,255,.82); /* layer fill content */
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.75), inset 0 0 0 rgba(0,0,0,.55); /* drop shadow and inner shadow */
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.75), inset 0 0 0 rgba(0,0,0,.55); /* drop shadow and inner shadow */
+	box-shadow: 0 1px 0 rgba(255,255,255,.75), inset 0 0 0 rgba(0,0,0,.55); /* drop shadow and inner shadow */
+	//background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDMwMCA1MiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSItMS40MjEwODU0NzE1MjAyZS0xNCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzMDAiIGhlaWdodD0iNTIiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==); /* gradient overlay */
+	background-image: -moz-linear-gradient(bottom, rgba(255,255,255,.82) 0%, #fff 100%); /* gradient overlay */
+	background-image: -o-linear-gradient(bottom, rgba(255,255,255,.82) 0%, #fff 100%); /* gradient overlay */
+	background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,.82) 0%, #fff 100%); /* gradient overlay */
+	background-image: linear-gradient(bottom, rgba(255,255,255,.82) 0%, #fff 100%); /* gradient overlay */
+}
+.banner .button2_wrap {
+	@extend .shape-4;
+	height: 110px;
+	margin-top: 10px;
+	display: table;
+
+}
+.banner .button2_text_top {
+	color: #676569; /* text color */
+	font-family: "Helvetica";
+	font-size: 13px;
+	text-align: center;
+	margin: auto ;
+	margin: 23px 10px 14px 10px;
+
+	//line-height: 60px; /* <-- this is what you must define */
+    vertical-align: middle;
+
+}
+.button2_wrap .button2 {
+	@extend .shape-6;
+	margin-left: 28px;
+	//padding: 10px;
+}
+.button2 .button1_text_in {
+	color: #fff; /* text color */
+	font-family: "PTSans", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.71); /* drop shadow */
+	margin-left: 48px;
+	line-height: 37px; /* <-- this is what you must define */
+    vertical-align: middle;
+	display: flex;
+	i {
+		margin: 11px 15px;
+		display: block;
+		width: 16px;
+		height: 50px;
+		background:  url("./img/arrow1.png") 0 0 no-repeat;
+	}
+}
+.shape-6 {
+	width: 241px;
+	height: 39px;
+	border: 1px solid #0073bf; /* stroke */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* border radius */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	background-color: rgba(255,255,255,.82); /* layer fill content */
+	-moz-box-shadow: inset 0 1px 0 rgba(251,251,252,.55); /* inner shadow */
+	-webkit-box-shadow: inset 0 1px 0 rgba(251,251,252,.55); /* inner shadow */
+	box-shadow: inset 0 1px 0 rgba(251,251,252,.55); /* inner shadow */
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDI0MyA0MSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSItMS40MjEwODU0NzE1MjAyZS0xNCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWY3YmU1IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGE5YmU5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyNDMiIGhlaWdodD0iNDEiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==); /* gradient overlay */
+	background-image: -moz-linear-gradient(bottom, #1f7be5 0%, #4a9be9 100%); /* gradient overlay */
+	background-image: -o-linear-gradient(bottom, #1f7be5 0%, #4a9be9 100%); /* gradient overlay */
+	background-image: -webkit-linear-gradient(bottom, #1f7be5 0%, #4a9be9 100%); /* gradient overlay */
+	background-image: linear-gradient(bottom, #1f7be5 0%, #4a9be9 100%); /* gradient overlay */
+}
+/* .face {
+	//height: 500px;
+	background: transparent url("./img/face.png") 0 0 no-repeat;
+	//float: right;
+	//position: absolute;
+	//left: 471px;
+} */

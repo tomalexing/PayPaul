@@ -1,0 +1,144 @@
+
+* {
+  box-sizing: border-box;
+
+}
+body {
+	background-color: rgb(248,248,248);
+}
+
+@font-face {
+      font-family: "Helvetica";
+      src: url('./font/HelveticaNeueLTStd-Roman.otf');
+      font-weight: normal;
+      font-style: normal;
+}
+.wrap-top-nav {
+  background-color: #716f73;
+  height: 46px; 
+  border-bottom: 1px solid #000;
+  -webkit-filter: saturate(2) blur(.7px) brightness(0.9) contrast(1.1);	
+}
+.top-nav {
+  @extend .clearfix;
+  background-color: #716f73;
+  height: 46px; 
+  position: relative;
+  max-width: $size;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+}
+
+.buttom-top{
+	width: 105px;
+	height: 46px;
+	border: 1px solid #606060; /* stroke */
+	background-color: #716f73; /* layer fill content */
+	-moz-box-shadow: 0 2px 0 rgba(255,255,255,.3), 0 0 0 1px rgba(255,255,255,.5), inset 0 1px 4px rgba(0,0,0,.07); /* drop shadow, outer glow and inner shadow */
+	-webkit-box-shadow: 0 2px 0 rgba(255,255,255,.3), 0 0 0 1px rgba(255,255,255,.5), inset 0 1px 4px rgba(0,0,0,.07); /* drop shadow, outer glow and inner shadow */
+	box-shadow: 0 2px 0 rgba(255,255,255,.3), 0 0 0 1px rgba(255,255,255,.5), inset 0 1px 4px rgba(0,0,0,.07); /* drop shadow, outer glow and inner shadow */
+}
+@mixin buttom-top-hover() {
+	border: 1px solid #000; /* stroke */
+	background-color: #716f73; /* layer fill content */
+	-moz-box-shadow: 0 2px 0 rgba(255,255,255,.3), 0 0 0 1px rgba(255,255,255,.5), inset 0 1px 4px rgba(0,0,0,.07), inset 0 0 32px rgba(0,0,0,.24); /* drop shadow, outer glow, inner shadow and inner glow */
+	-webkit-box-shadow: 0 2px 0 rgba(255,255,255,.3), 0 0 0 1px rgba(255,255,255,.5), inset 0 1px 4px rgba(0,0,0,.07), inset 0 0 32px rgba(0,0,0,.24); /* drop shadow, outer glow, inner shadow and inner glow */
+	box-shadow: 0 2px 0 rgba(255,255,255,.3), 0 0 0 1px rgba(255,255,255,.5), inset 0 1px 4px rgba(0,0,0,.07), inset 0 0 32px rgba(0,0,0,.24); /* drop shadow, outer glow, inner shadow and inner glow */
+}
+.top-nav span {
+	@extend .buttom-top;	
+	overflow:hidden;
+	display: block;
+	float: left;
+
+  	padding-top: 11px;
+  	padding-left: 29px;
+	color: #fff;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.71);
+	cursor: pointer;
+	&:hover{
+		@include buttom-top-hover();	
+	}
+
+}
+
+.top-nav span:first-of-type {
+	margin-left: 10px;
+	width: 110px;
+	padding-left: 30px;
+	margin-right: 1px; // dont overflow border
+}
+.top-nav form{
+	position: absolute;
+	top: 0;
+  	right: 0;  
+}
+.top-nav fieldset {
+  	display: block;
+ 	float: left;
+ 	overflow: hidden;
+ 	border: none;
+ 	padding: 7px 5px;
+	margin: 0px 2px;
+
+}
+
+input:focus {
+	outline: 0px; //ugly squart line - none
+	-webkit-animation: pulse 1.5s infinite ease-in-out;
+   // box-shadow: 0px 0px 3pt 2pt red;
+}
+.shape-5 {
+	width: 170px;
+	height: 31px;
+	-moz-border-radius: 15px / 16px;
+	-webkit-border-radius: 15px / 16px;
+	border-radius: 15px / 16px; /* border radius */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	background-color: #000; /* color overlay */
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.75), inset 0 1px 0 rgba(0,0,0,.55); /* drop shadow and inner shadow */
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.75), inset 0 1px 0 rgba(0,0,0,.55); /* drop shadow and inner shadow */
+	box-shadow: 0 1px 0 rgba(255,255,255,.75), inset 0 1px 0 rgba(0,0,0,.55); /* drop shadow and inner shadow */
+}
+
+#login fieldset input {
+
+	@extend .shape-5;
+	font-family: "Helvetica", Arial, sans-serif;
+	color: #fff; /* text color */
+	font-size: 12px;
+	border: none;
+	padding: 10px 25px;
+}
+
+#login fieldset:last-child input{
+	width: 150px;
+	padding-right: 10px ;
+}
+
+@-webkit-keyframes pulse {
+0% {
+box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+}
+50% {
+box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+}
+100% {
+box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+}
+}
+
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  .clearfix:after {
+    clear: both; }

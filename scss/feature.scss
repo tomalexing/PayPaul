@@ -1,0 +1,122 @@
+
+.feature {
+	height: 245px;
+	-moz-box-shadow: 0 1px 0 rgb(215,215,215); /* drop shadow */
+	-webkit-box-shadow: 0 1px 0 rgb(215,215,215); /* drop shadow */
+	box-shadow: 0 1px 0  rgb(236,236,236), inset  0 -1px 0 rgb(142,142,142); /* drop shadow */
+
+}
+.feature_context {
+	height: inherit;
+	max-width: $size;
+	margin: 0 auto;
+	overflow: hidden;
+
+
+}
+.pure-u-1-3  {
+	padding: 22px 10px 0px 10px;
+}
+.pure-u-1-3  i {
+	display: block;
+	width: 40px;
+	height: 53px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	//background-color: #5d5d61; /* layer fill content */
+	-moz-box-shadow: 0 1px 0 #fff; /* drop shadow */
+	-webkit-box-shadow: 0 1px 0 #fff; /* drop shadow */
+	box-shadow: 0 1px 0 #fff; /* drop shadow */
+}
+
+.pure-u-1-3 #star {
+	background: transparent url('./img/star.png') 0 0 no-repeat;
+}
+.pure-u-1-3 #leaf {
+	background: transparent url('./img/leaf.png') 0 0 no-repeat;
+}
+
+.pure-u-1-3 #stamp {
+	background: transparent url('./img/stamp.png') 0 0 no-repeat;
+}
+.pure-u-1-3 .list_top {
+
+	color: #7e7e7e; /* text color */
+	font-family: "Helvetica";
+	font-size: 29px;
+	text-shadow: 0 1px 0 #fff; /* drop shadow */
+	letter-spacing: -1px;
+	margin: 0px;
+
+}
+
+.pure-u-1-3 .description {
+	color: #7e7e7e; /* text color */
+	font-family: "Helvetica";
+	font-size: 13px;
+	text-shadow: 0 1px 0 #fff; /* drop shadow */
+	line-height: 20px;
+	margin-top: 8px;
+}
+
+.pure-u-1-3 .read_more {
+	color: #0073bf; /* text color */
+	font-family: "Helvetica";
+	font-size: 12px;
+	font-weight: bold;
+
+}
+.strip_1 {
+	width: 1550px;
+	height: 5px;
+	background-color: rgb(215,215,215);
+}
+
+ul {
+	list-style:none;
+	padding: 0px;
+    margin: 0px;
+}
+.shape-7 {
+	height: 50px;
+	//background-color: #f6f6f6; /* layer fill content */
+	-moz-box-shadow: 0 1px 0 rgb(90,90,90), inset 0 -1px 0px rgb(142,142,142); /* drop shadow and inner shadow */
+	-webkit-box-shadow: 0 1px 0 rgb(90,90,90), inset 0 -1px 0px rgb(142,142,142); /* drop shadow and inner shadow */
+	box-shadow: 0 1px 0 rgb(90,90,90), inset 0 -1px 0px rgb(142,142,142); /* drop shadow and inner shadow */
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%);
+	background-image: -o-linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%);
+	background-image: linear-gradient(to top, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%); /* gradient overlay */ /* gradient overlay */ /* gradient overlay */ /* gradient overlay */
+}
+.feature_down_wrap {
+	@extend .shape-7;
+	overflow: hidden;
+	@extend .clearfix;
+}
+
+.feature_down {
+	height: inherit;
+	max-width: $size;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+.feature_down ul {
+	margin-left: 10px;
+}
+.feature_down li {
+	float: left;
+	margin-right: 35px;
+	margin-top: 17px;
+
+	color: #5f5f63; /* text color */
+	font-family: "Helvetica";
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #fff; /* drop shadow */
+}
+.shadow {
+
+	height: 5px;
+	background-color: #4e4e4e; /* layer fill content */
+}
